@@ -75,46 +75,7 @@ public class BatteryView extends View {
     }
 
     private void initView() {
-        /**
-         * 设置电池画笔
-         */
-        mBatteryPait = new Paint();
-        mBatteryPait.setColor(Color.WHITE);
-        mBatteryPait.setStrokeWidth(mBatteryStroke);
-        mBatteryPait.setStyle(Paint.Style.STROKE);
-        mBatteryPait.setAntiAlias(true);
-        /**
-         * 电量画笔
-         */
-        mPowerPaint = new Paint();
-        if(progress > 30) barColor = Color.rgb(91, 194, 54);
-        else if(progress> 10) barColor = Color.rgb(255,165,0);
-        else barColor = Color.RED;
-        mPowerPaint.setColor(barColor);
-        mPowerPaint.setStyle(Paint.Style.FILL);
-        mPowerPaint.setStrokeWidth(mBatteryStroke);
-        mPowerPaint.setAntiAlias(true);
-        /**
-         * 设置电池矩形
-         */
-        mBatteryRectF = new RectF(0, 0, mBatteryWidth,
-                mBatteryHeight);
 
-        /**
-         * 设置电池盖矩形
-         */
-
-        mCapRectF = new RectF(mBatteryWidth, mBatteryHeight / 2 - mCapHeight / 2,
-                mCapWidth + mBatteryWidth, mBatteryHeight / 2 + mCapHeight / 2);
-
-        /**
-         * 设置电量的矩形
-         */
-
-
-        mPowerRectF = new RectF(mBatteryWidth - mPowerPadding
-                - mPowerWidth - mBatteryStroke, mPowerPadding, (mBatteryWidth
-                - mPowerPadding - mBatteryStroke) * progress / 100, mBatteryHeight - mPowerPadding);
     }
 
     @Override
