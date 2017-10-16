@@ -9,7 +9,7 @@
     android:paddingLeft="64dp"
     android:paddingRight="64dp"
     android:paddingTop="16dp"
-    android:background="@android:color/black"
+    android:background="@android:color/white"
     tools:context="com.example.zheng.lifebattery.MainActivity">
 
     <com.example.zheng.lifebattery.RoundedRectProgressBar
@@ -33,9 +33,10 @@
     <com.example.zheng.lifebattery.BatteryView
         android:id="@+id/bv"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_gravity="center"
 
         />
+
 
 </LinearLayout>
