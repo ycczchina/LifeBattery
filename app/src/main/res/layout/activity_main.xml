@@ -9,11 +9,6 @@
     tools:context="com.example.zheng.lifebattery.MainActivity">
 
 
-
-
-    <include layout = "@layout/content_main"/>
-
-
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab1"
         android:layout_width="wrap_content"
@@ -24,9 +19,9 @@
         android:clickable="true"
         app:backgroundTint="@color/colorPrimary"
         app:fabSize="mini"
-        app:srcCompat="@android:drawable/ic_input_add" />
+        app:srcCompat="@android:drawable/ic_menu_edit" />
 
-
+    <include layout="@layout/content_main" />
 
 
 </android.support.design.widget.CoordinatorLayout>
